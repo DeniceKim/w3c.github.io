@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Best practices and recommended tools</title>
+        <link rel="stylesheet" href="css/wgio.css" />
+        <link rel="icon" type="image/x-icon" href="//labs.w3.org/favicon.ico" />
+    </head>
+    
+    <body>
+      
+        <header>
+            <h1>Best practices and recommended tools</h1>
+        </header>
+        
+        <nav>
+            <a href="/">Home</a>
+            •
+            <a href="https://github.com/w3c/">Repositories</a>
+            •
+            <a href="https://help.github.com/">GitHub Help</a>
+        </nav>
+
+        <nav class="internal">
+          <ul>
+            <li>
+              <a href="#metadata">Metadata</a>
+              <ul>
+                  <li><a href="#git">Git special files</a></li>
+                  <li><a href="#boilerplate">GitHub boilerplate files</a></li>
+              </ul>
+            </li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#vulns">Vulnerability alerts</a></li>
+            <li><a href="#travis">Travis <abbr title="continuous integration">CI</abbr></a></li>
+          </ul>
+        </nav>
+
+        <main>
+            <section id="metadata">
+                <h2>Metadata <a href="#metadata">&#x1F517;</a></h2>
+                <section id="git">
+                    <h3>Git special files <a href="#git">&#x1F517;</a></h3>
+                    <p>Have a <code>.gitignore</code> (hidden file) in the root directory of your repo to list files and directories that you do <em>not</em>
+                        want to keep under version control.
+                        Typically something along the lines of:</p>
+                    <pre>node_modules/
+npm-debug.log
+logs/</pre>
+                    <p>See <a href="https://github.com/w3c/Eunomia/blob/master/.gitignore">an example</a>.</p>
+                </section>
+                <section id="boilerplate">
+                    <h3>GitHub boilerplate files <a href="#boilerplate">&#x1F517;</a></h3>
+                    <p>To keep the root directory of the repository clean and manageable, create meta files under <code>.github/</code>.
+                        In decreasing order of importance:</p>
+                    <ul>
+                        <li><code>README.md</code></li>
+                        <li><code>LICENSE.md</code></li>
+                        <li><code>CONTRIBUTING.md</code></li>
+                        <li><code>ISSUE_TEMPLATE.md</code></li>
+                        <li><code>PULL_REQUEST_TEMPLATE.md</code></li>
+                    </ul>
+                    <p>See <a href="https://github.com/w3c/Eunomia/tree/master/.github">an example</a>.</p>
+                </section>
+            </section>
+            <section id="notifications">
+                <h2>Notifications <a href="#notifications">&#x1F517;</a></h2>
+            </section>
+            <section id="vulns">
+                <h2>Vulnerability alerts <a href="#vulns">&#x1F517;</a></h2>
+                <p>Enable them here:</p>
+                <pre>https://github.com/w3c/&lt;REPO&gt;/settings#vulnerability-alerts-feature</pre>
+                <p>Once enabled, check alerts here:</p>
+                <pre>https://github.com/w3c/&lt;REPO&gt;/settings/alerts</pre>
+            </section>
+            <section id="travis">
+                <h2>Travis <abbr title="continuous integration">CI</abbr> <a href="#travis">&#x1F517;</a></h2>
+            </section>
+        </main>
+      
+        <footer>
+            <address><a href="https://github.com/w3c/w3c.github.io/">We are on GitHub</a></address>
+            <p><a href="https://www.w3.org/"><img src="img/w3c.svg" width="65" height="45" alt="W3C Logo"></a></p>
+        </footer>
+
+    </body>
+
+</html>
